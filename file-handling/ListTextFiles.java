@@ -16,12 +16,16 @@ class ListTextFiles {
                 return file.getName().endsWith(".txt");
             }
         });
-
-        System.out.println(".txt files are : ");
+/*
+        File[] myFile = directory.listFiles(
+                file -> file.getName().endsWith(".txt"));
+ */
+        System.out.println("\n .txt files are : \n");
 
         for (File file : myFiles) {
             System.out.println(file.getName());
         }
+
 
     }
 
